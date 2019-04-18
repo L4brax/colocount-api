@@ -1,5 +1,7 @@
 package com.hess.colocount;
 
+import com.hess.colocount.domain.User;
+import com.hess.colocount.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

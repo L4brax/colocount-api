@@ -1,7 +1,9 @@
-package com.hess.colocount;
+package com.hess.colocount.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.Date;
 
 @Document(collection = "users")
 public class User {
@@ -12,10 +14,20 @@ public class User {
     private String firstName;
     private String email;
     private String password;
+    private Date created;
 
     public User(String firstName, String email) {
         this.firstName = firstName;
         this.email = email;
+        this.created = new Date();
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
     }
 
     public String getId() {
