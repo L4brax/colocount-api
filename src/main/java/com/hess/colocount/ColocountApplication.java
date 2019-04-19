@@ -20,6 +20,8 @@ public class ColocountApplication {
             userRepository.deleteAll();
             userRepository.save(new User("Antoine","antoine@coloc.com"));
             userRepository.save(new User("François", "françois@coloc.com"));
+            userRepository.save(new User("Michel", "michel@coloc.com"));
+            userRepository.save(new User("Morgane", "morgane@coloc.com"));
         };
     }
 

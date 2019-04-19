@@ -25,6 +25,6 @@ public class UserController {
     public User updateUser(@PathVariable String id, @RequestBody User user) {
         User finalUser = user;
         finalUser.setId(id);
-        return userRepository.save(user);
+        return userRepository.save(finalUser);
     }
 }
